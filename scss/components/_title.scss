@@ -1,0 +1,16 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+
+.title{
+    padding: var.$spacing-md 0;
+    font-size: var.$font-size-3xl;
+    font-weight: var.$font-weight-bold;
+    color: var.$color-primary-300;
+
+    &--highlighted-products {
+        font-size: var.$font-size-3xl;
+        text-align: center;
+        padding: var.$spacing-xl 0;
+        padding-top: var.$spacing-3xl;
+    }
+}
