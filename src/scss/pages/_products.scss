@@ -1,0 +1,83 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+
+.page-products {
+    &__head {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: var.$spacing-6xl;
+        padding: var.$spacing-3xl 0;
+
+        .searcher {
+            &__word {
+                border: none;
+                font-size: var.$font-size-xs;
+                font-weight: var.$font-weight-regular;
+                color: var.$color-neutro-900;
+                padding: var.$spacing-xs var.$spacing-3xs;
+
+                &:focus,
+                &:hover {
+                    outline: none;
+                }
+            }
+        }
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: var.$spacing-md;
+        padding: var.$spacing-md;
+    }
+}
+
+@media(max-width: 1500px) {
+    .page-products {
+        .gallery {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+@media(max-width: 1024px) {
+    .page-products {
+        .gallery {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media(max-width: 850px) {
+    .page-products {
+        &__head {
+            flex-direction: column;
+        }
+
+        &__title {
+            font-size: var.$spacing-7xl;
+        }
+    }
+}
+
+@media(max-width: 700px) {
+    .page-products {
+        .gallery {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        &__title {
+            font-size: var.$spacing-5xl;
+        }
+    }
+}
+
+@media(max-width: 500px) {
+    .page-products {
+        &__title {
+            font-size: var.$spacing-7xl;
+        }
+    }
+}
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nicolás Yorlano">
+    <meta name="description" content="Hamburguesas LP, la mejor hamburgueseria de La Plata">
+    <meta name="keywords" content="Hamburguesa, Hamburguesas, Burger, Hamburgueseria">
+    <title>Hamburguesas LP - Inicio</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="shortcut icon" href="../src/assets/icons/logo_marca.png" type="image/png">
+</head>
+
+<body>
+    <header>
+        <h1>Hamburguesas LP</h1>
+        <nav>
+            <ul class="navbar">
+                <li><a class="navbar__item navbar__item--active" href="./index.html">Inicio</a></li>
+                <li><a class="navbar__item" href="./about-us.html">Nosotros</a></li>
+                <li><a class="navbar__item" href="./products.html">Productos</a></li>
+                <li><a class="navbar__item" href="./contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-home">
+        <section>
+            <article class="slider">
+                <div class="slider__slides">
+                    <div class="slider__slide">
+                        <img src="./assets/images/slider/slide1.jpg" alt="Imagen slider 1" />
+                    </div>
+                    <div class="slider__slide">
+                        <img src="./assets/images/slider/slide2.jpg" alt="Imagen slider 2" />
+                    </div>
+                    <div class="slider__slide">
+                        <img src="./assets/images/slider/slide3.jpg" alt="Imagen slider 3" />
+                    </div>
+                </div>
+
+                <div class="slider__text">
+                    <h2>Las mejores hamburguesas de La Plata</h2>
+                    <p>Mirá nuestros productos destacados <a href="#products-highlighted">acá</a></p>
+                </div>
+            </article>
+
+            <article class="highlighted-products">
+                <h3 class="title title--highlighted-products" id="products-highlighted">Nuestros productos más destacados</h3>
+                <div class="card card--highlighted" >
+                    <div class="card--highlighted--float">
+                        <h3 class="card__title card__title--highlighted">Producto Destacado 1</h3>
+                        <p class="card__description card__description--highlighted">Descripción del producto 1</p>
+                    </div>
+                    <img src="../src/assets/images/highlighted/image1.jpg" alt="Producto destacado 1" loading="lazy" class="card__image">
+                </div>
+                <div class="card card--highlighted" >
+                    <div class="card--highlighted--float">
+                        <h3 class="card__title card__title--highlighted">Producto Destacado 2</h3>
+                        <p class="card__description card__description--highlighted">Descripción del producto 2</p>
+                    </div>
+                    <img src="../src/assets/images/highlighted/image2.jpg" alt="P roducto destacado 2" loading="lazy" class="card__image">
+                </div>
+                <div class="card card--highlighted" >
+                    <div class="card--highlighted--float">
+                        <h3 class="card__title card__title--highlighted">Producto Destacado 3</h3>
+                        <p class="card__description card__description--highlighted">Descripción del producto 3</p>
+                    </div>
+                    <img src="../src/assets/images/highlighted/image3.jpg" alt="Producto destacado 3" loading="lazy" class="card__image">
+                </div>
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        <p class="copyright">&copy;2025 Todos los derechos reservados - Hamburguesas LP</p>
+    </footer>
+</body>
+
+</html>
