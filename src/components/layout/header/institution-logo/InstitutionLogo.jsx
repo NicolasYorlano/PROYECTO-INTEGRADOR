@@ -8,7 +8,8 @@ const InstitutionLogo = (props) => {
 
     return (
         <div className={classes} {...restProps}>
-            <Text className="institution-logo__title" variant="h1">Hamburguesas LP</Text>
+            <img className="institution-logo__logo" src={"/images/logo.png"} alt="Logo de la institución"/>
+            <Text className="institution-logo__title" variant="h1">Mi App</Text>
         </div>
     );
 };
