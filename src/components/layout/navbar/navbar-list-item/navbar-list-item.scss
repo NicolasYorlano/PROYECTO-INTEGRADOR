@@ -15,17 +15,23 @@
 
     &__label {
         color: var.$color-neutro-300;
-        font-size: var.$font-size-xs;
+        font-size: var.$font-size-sm;
         font-weight: inherit;
+
+        &:hover,
+        &--active {
+            color: var.$color-neutro-900;
+            font-size: var.$font-size-xs;
+        }
     }
+
 
     &:hover,
     &--active {
-        font-weight: var.$font-weight-bold;
-        background-color: var.$color-neutro-300;
-        color: var.$color-neutro-900;
-        padding: var.$spacing-xs var.$spacing-3xs;
+        background-color: var.$color-neutro-100;
+        padding: var.$spacing-4xs;
         border-radius: var.$spacing-3xs;
+
     }
 
     @media screen and (max-width: 768px) {
