@@ -5,7 +5,6 @@
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    background-color: var.$color-primary-500;
     padding: var.$spacing-sm;
 
     :first-child {
@@ -20,7 +19,7 @@
     }
 
     &__title {
-        color: var.$color-neutro-200;
+        color: var.$color-neutro-100;
         text-align: center;
     }
 }

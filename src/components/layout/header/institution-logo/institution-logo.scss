@@ -5,15 +5,10 @@
     align-items: center;
     gap: var.$spacing-sm;
 
-    &__logo {
-        height: fit-content;
-        width: var.$font-size-xxl;
-    }
-
     &__title {
         font-size: var.$font-size-xxl;
         font-weight: var.$font-weight-bold;
-        text-transform: uppercase;
+        color: var.$color-neutro-100
     }
 
 }

@@ -4,7 +4,7 @@
     &__link {
         display: flex;
         align-items: center;
-        gap: var.$spacing-xs;
+        gap: var.$spacing-3xl;
         padding: var.$spacing-xs;
     }
 
@@ -14,14 +14,18 @@
     }
 
     &__label {
-        color: var.$color-primary-700;
-        font-size: var.$font-size-md;
+        color: var.$color-neutro-300;
+        font-size: var.$font-size-xs;
         font-weight: inherit;
     }
 
     &:hover,
     &--active {
         font-weight: var.$font-weight-bold;
+        background-color: var.$color-neutro-300;
+        color: var.$color-neutro-900;
+        padding: var.$spacing-xs var.$spacing-3xs;
+        border-radius: var.$spacing-3xs;
     }
 
     @media screen and (max-width: 768px) {

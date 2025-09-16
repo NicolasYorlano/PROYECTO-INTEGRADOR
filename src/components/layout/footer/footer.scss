@@ -4,7 +4,6 @@
     grid-area: footer;
 
     padding: var.$spacing-sm 5%;
-    background-color: var.$color-primary-500;
 
     &__content {
         display: grid;
@@ -13,7 +12,7 @@
     }
 
     &__copyright {
-        color: var.$color-neutro-200;
+        color: var.$color-neutro-100;
         font-size: var.$font-size-sm;
         font-weight: var.$font-weight-regular;
         text-align: center;

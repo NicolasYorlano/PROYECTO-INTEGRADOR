@@ -4,11 +4,10 @@
     grid-area: navbar;
 
     padding: var.$spacing-sm !important;
-    background-color: var.$color-primary-300;
 
     &__menu-icon,
     &__menu-drawer {
-        color: var.$color-primary-700;
+        color: var.$color-primary-200;
         display: none !important;
     }
 
