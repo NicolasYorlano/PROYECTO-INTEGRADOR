@@ -6,6 +6,7 @@ export const useProduct = () => {
     const [ isLoading, setIsLoading ] = useState(false);
     const [ error, setError ] = useState(null);
 
+    // getProduct
     const fetchProducts = async () => {
         setIsLoading(true);
         setError(null);
@@ -21,6 +22,7 @@ export const useProduct = () => {
         setIsLoading(false);
     };
 
+    // getProductById
     const fetchProductById = async (id) => {
         setIsLoading(true);
         setError(null);
