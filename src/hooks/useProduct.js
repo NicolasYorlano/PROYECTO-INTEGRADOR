@@ -26,6 +26,7 @@ export const useProduct = () => {
     const fetchProductById = async (id) => {
         setIsLoading(true);
         setError(null);
+
         let product = null;
 
         try {
