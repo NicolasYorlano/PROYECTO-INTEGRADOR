@@ -3,11 +3,11 @@
 .navbar {
     grid-area: navbar;
 
-    padding: var.$spacing-sm !important;
+    padding: var.$spacing-xs !important;
 
     &__menu-icon,
     &__menu-drawer {
-        color: var.$color-primary-200;
+        color: var.$color-neutro-100;
         display: none !important;
     }
 

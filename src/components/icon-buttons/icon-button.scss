@@ -1,7 +1,7 @@
 @use "@/scss/variables" as var;
 
 .icon-button {
-    color: var.$color-neutro-400;
+    color: var.$color-neutro-100 !important;
 
     &:hover {
         background-color: var.$color-dark-alpha-100 !important;
@@ -13,13 +13,13 @@
 
     &__edit {
         svg {
-            fill: var.$color-primary-700
+            fill: var.$color-neutro-100
         }
     }
 
     &__remove {
         svg {
-            fill: var.$color-danger-500;
+            fill: var.$color-neutro-100;
         }
     }
 }

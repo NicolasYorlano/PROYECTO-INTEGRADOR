@@ -4,24 +4,23 @@
     &__link {
         display: flex;
         align-items: center;
-        gap: var.$spacing-3xl;
-        padding: var.$spacing-xs;
+        gap: var.$spacing-3xs;
+        padding: var.$spacing-3xs;
     }
 
     &__icon {
         display: none !important;
-        color: var.$color-primary-600;
+        color: var.$color-neutro-100;
     }
 
     &__label {
-        color: var.$color-neutro-300;
-        font-size: var.$font-size-sm;
+        color: var.$color-neutro-100;
+        font-size: var.$font-size-xs;
         font-weight: inherit;
 
         &:hover,
         &--active {
             color: var.$color-neutro-900;
-            font-size: var.$font-size-xs;
         }
     }
 

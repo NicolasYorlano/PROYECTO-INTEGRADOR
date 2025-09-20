@@ -5,7 +5,7 @@
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: var.$spacing-sm;
+    padding: var.$spacing-3xs;
 
     :first-child {
         grid-column: 2;

@@ -12,11 +12,13 @@ const NavbarListItem = (props) => {
     const isActive = isDynamic ? pathname.startsWith(item.path) : pathname === item.path;
     const classes = `navbar-list-item ${isActive ? "navbar-list-item--active" : ""}`;
 
+    const classeLabel = `navbar-list-item__label ${isActive ? "navbar-list-item__label--active" : ""}`;
+
     return (
         <li className={classes}>
             <Link className="navbar-list-item__link" to={item.path}>
                 <Icon className="navbar-list-item__icon"/>
-                <Text className="navbar-list-item__label" variant="span">{item.label}</Text>
+                <Text className={classeLabel} variant="span">{item.label}</Text>
             </Link>
         </li>
     );

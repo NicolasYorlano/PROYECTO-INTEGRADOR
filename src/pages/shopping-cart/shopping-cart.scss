@@ -11,7 +11,7 @@
     .table {
         &__head {
             th {
-                color: var.$color-neutro-600;
+                color: var.$color-neutro-100;
                 font-weight: var.$font-weight-regular;
                 font-size: var.$font-size-sm;
             }
@@ -23,7 +23,7 @@
             }
 
             td {
-                color: var.$color-neutro-800;
+                color: var.$color-neutro-100;
                 font-weight: var.$font-weight-regular;
                 font-size: var.$font-size-sm;
             }
@@ -37,7 +37,7 @@
         }
 
         &__total {
-            color: var.$color-neutro-800;
+            color: var.$color-neutro-100;
             font-weight: var.$font-weight-bold;
             font-size: var.$font-size-sm;
         }
