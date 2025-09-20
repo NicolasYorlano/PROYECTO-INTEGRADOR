@@ -1,4 +1,4 @@
 # PROYECTO-INTEGRADOR
-Mi proyecto integrador del Bootcamp de Fullstack de EducacionIT
+Mi proyecto integrador del Bootcamp de Fullstack de EducaciónIT
 
-Esta es la segunda fase (fase-2) del proyecto. En este proyecto se utilizaron tecgnologías del desarollo web frontend, tales como HTML, CSS, JAVASCRIPT y REACT.JS.
+Esta es la segunda fase (fase-2) del proyecto. En este proyecto se utilizaron tecnologías del desarrollo web frontend, tales como HTML, CSS, JavaScript y React.js.
