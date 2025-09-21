@@ -26,9 +26,10 @@
         padding: 0 var.$spacing-md;
     }
 
-    &__title {
+    &__name {
         font-size: var.$font-size-sm;
         font-weight: var.$font-weight-bold;
+        color: var.$color-neutro-900;
 
         &--skeleton {
             height: 35px;
@@ -40,6 +41,7 @@
         font-size: var.$font-size-xxs;
         font-weight: var.$font-weight-regular;
         text-align: justify;
+        color: var.$color-neutro-900;
 
         display: -webkit-box;
         -webkit-box-orient: vertical;
@@ -58,6 +60,7 @@
         font-size: var.$font-size-xxs;
         font-weight: var.$font-weight-bold;
         align-self: flex-end;
+        color: var.$color-neutro-900;
 
         &--skeleton {
             height: 14px;
