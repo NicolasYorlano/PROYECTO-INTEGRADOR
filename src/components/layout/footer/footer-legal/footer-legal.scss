@@ -3,15 +3,15 @@
 .footer-legal {
     display: flex;
     flex-direction: column;
-    gap: var.$spacing-xs;
+    gap: var.$spacing-3xs;
 
     &__title {
         color: var.$color-neutro-100;
-        font-size: var.$font-size-sm;
+        font-size: var.$font-size-xxs;
         font-weight: var.$font-weight-bold;
     }
 
     &__content {
-        padding-left: var.$spacing-xs;
+        padding-left: var.$spacing-3xs;
     }
 }

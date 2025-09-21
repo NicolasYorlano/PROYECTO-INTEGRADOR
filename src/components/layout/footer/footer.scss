@@ -3,17 +3,17 @@
 .footer {
     grid-area: footer;
 
-    padding: var.$spacing-sm 5%;
+    padding: var.$spacing-xs 5%;
 
     &__content {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        padding: var.$spacing-xs;
+        padding: var.$spacing-3xs;
     }
 
     &__copyright {
         color: var.$color-neutro-100;
-        font-size: var.$font-size-sm;
+        font-size: var.$font-size-xxs;
         font-weight: var.$font-weight-regular;
         text-align: center;
     }

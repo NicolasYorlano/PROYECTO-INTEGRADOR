@@ -2,25 +2,26 @@
 
 .values {
     &__title {
-        color: var.$color-neutro-700;
-        font-size: var.$font-size-lg;
+        color: var.$color-neutro-100;
+        font-size: var.$font-size-sm;
         font-weight: var.$font-weight-bold;
-        padding: 0 var.$spacing-sm var.$spacing-sm var.$spacing-sm;
+        padding: 0 var.$spacing-xs var.$spacing-xs var.$spacing-xs;
     }
 
     &__description {
-        color: var.$color-neutro-700;
-        font-size: var.$font-size-md;
+        color: var.$color-neutro-100;
+        font-size: var.$font-size-xs;
         font-weight: var.$font-weight-regular;
         text-align: justify;
-        padding: 0 var.$spacing-sm;
+        padding: 0 var.$spacing-xs;
     }
 
     &__image {
         height: fit-content;
         width: 25%;
         float: left;
-        margin: 0 var.$spacing-sm var.$spacing-xs 0;
+        margin: 0 var.$spacing-xs var.$spacing-3xs 0;
         padding: 0 var.$spacing-md var.$spacing-md var.$spacing-md;
     }
 }
+

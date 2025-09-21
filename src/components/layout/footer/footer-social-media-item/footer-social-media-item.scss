@@ -1,9 +1,9 @@
 @use "@/scss/variables" as var;
 
 .footer-social-media-item {
-    height: var.$font-size-xxl;
-    width: var.$font-size-xxl;
-    padding-top: var.$spacing-xs;
+    height: var.$font-size-xl;
+    width: var.$font-size-xl;
+    padding-top: var.$spacing-3xs;
 
     display: flex;
     align-items: center;
@@ -13,15 +13,15 @@
     border-radius: 50%;
 
     &:hover {
-        border-color: var.$color-neutro-700;
+        border-color: var.$color-neutro-300;
 
         .footer-social-media-item__icon {
-            fill: var.$color-neutro-700;
+            fill: var.$color-neutro-300;
         }
     }
 
     &__icon {
-        width: var.$font-size-lg;
+        width: var.$font-size-md;
         fill: var.$color-neutro-100;
     }
 }

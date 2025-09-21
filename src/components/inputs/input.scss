@@ -14,7 +14,7 @@
         p,
         label,
         label.Mui-focused {
-            color: var.$color-primary-800 !important;
+            color: var.$color-primary-100 !important;
         }
 
         div input+fieldset,
@@ -23,7 +23,7 @@
         div input:focus+fieldset,
         div input:focus~.MuiOutlinedInput-notchedOutline,
         div textarea:focus~.MuiOutlinedInput-notchedOutline {
-            border-color: var.$color-primary-800 !important;
+            border-color: var.$color-primary-100 !important;
         }
     }
 
@@ -42,6 +42,7 @@
         div input:focus~.MuiOutlinedInput-notchedOutline,
         div textarea:focus~.MuiOutlinedInput-notchedOutline {
             border-color: var.$color-danger-500 !important;
+            
         }
     }
 

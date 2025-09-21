@@ -22,12 +22,12 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        gap: var.$spacing-sm;
+        gap: var.$spacing-xs;
         padding: 0 var.$spacing-md;
     }
 
     &__title {
-        font-size: var.$font-size-lg;
+        font-size: var.$font-size-sm;
         font-weight: var.$font-weight-bold;
 
         &--skeleton {
@@ -37,7 +37,7 @@
     }
 
     &__description {
-        font-size: var.$font-size-sm;
+        font-size: var.$font-size-xxs;
         font-weight: var.$font-weight-regular;
         text-align: justify;
 
@@ -55,7 +55,7 @@
     }
 
     &__price {
-        font-size: var.$font-size-sm;
+        font-size: var.$font-size-xxs;
         font-weight: var.$font-weight-bold;
         align-self: flex-end;
 
@@ -81,13 +81,13 @@
 
     &__add {
         svg {
-            font-size: var.$font-size-lg !important;
+            font-size: var.$font-size-sm !important;
         }
     }
 
     &__remove {
         svg {
-            font-size: var.$font-size-lg !important;
+            font-size: var.$font-size-sm !important;
         }
     }
 }
