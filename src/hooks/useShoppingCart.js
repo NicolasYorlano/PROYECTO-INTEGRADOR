@@ -81,6 +81,12 @@ export const useShoppingCart = () => {
         }
     };
 
+    const clearCart = () => {
+        const data = createShoppingCartSchema([]);
+        localStorage.setItem(KEY_SHOPPING_CART, JSON.stringify(data));
+        setShoppingCart(data);
+    };
+
     useEffect(() => {
         getShoppingCart();
     }, []);
@@ -89,5 +95,6 @@ export const useShoppingCart = () => {
         shoppingCart,
         addArticle,
         subtractArticle,
+        clearCart,
     };
 };

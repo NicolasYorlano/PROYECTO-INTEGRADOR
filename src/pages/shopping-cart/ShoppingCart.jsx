@@ -1,3 +1,4 @@
+import { ButtonPrimary } from "@/components/buttons";
 import { Text } from "@/components/texts";
 import AppContext from "@/contexts/AppContext";
 import { Table, TableBody, TableCell, TableHead, TableRow } from "@mui/material";
@@ -5,8 +6,34 @@ import { useContext } from "react";
 import "./shopping-cart.scss";
 
 const ShoppingCart = () => {
-    const { shoppingCartContext } = useContext(AppContext);
-    const { shoppingCart } = shoppingCartContext;
+    const { shoppingCartContext, productsContext } = useContext(AppContext);
+    const { shoppingCart, clearCart } = shoppingCartContext;
+    const { fetchProductById, updateProduct } = productsContext;
+
+    const handlePurchase = async () => {
+        try {
+            for (const article of shoppingCart.articles) {
+                const product = await fetchProductById(article.id);
+
+                if (product.stock < article.quantity) {
+                    alert("Hay productos con stock insuficiente");
+                    return;
+                }
+            }
+
+            for (const article of shoppingCart.articles) {
+                const product = await fetchProductById(article.id);
+                await updateProduct(product.id, { ...product, stock: product.stock - article.quantity });
+            }
+
+            alert("¡Compra realizada con éxito!");
+
+            clearCart();
+        } catch (error) {
+            console.error(error);
+            alert("Ocurrió un error al procesar la compra.");
+        }
+    };
 
     return (
         <div className="shopping-cart">
@@ -31,11 +58,15 @@ const ShoppingCart = () => {
                         </TableRow>
                     ))}
                 </TableBody>
+
             </Table>
 
             <div className="table__footer">
                 <Text className="table__total" variant="p">Total: ${shoppingCart.totalAmount?.toFixed(2)}</Text>
             </div>
+
+            <ButtonPrimary onClick={clearCart}>Vaciar carrito</ButtonPrimary>
+            <ButtonPrimary onClick={handlePurchase}>Comprar</ButtonPrimary>
         </div>
     );
 };
