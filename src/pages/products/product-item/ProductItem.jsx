@@ -38,7 +38,7 @@ const ProductItem = (props) => {
 
     const renderActions = () => {
         if (product.stock === 0) {
-            return (<Text variant="p">SIN STOCK</Text>);
+            return (<Text className="product-item__control-stock" variant="p">SIN STOCK</Text>);
         }
 
         return (

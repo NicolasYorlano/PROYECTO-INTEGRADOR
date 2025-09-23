@@ -82,6 +82,10 @@
         }
     }
 
+    &__control-stock {
+        color: var.$color-danger-500;
+    }
+
     &__add {
         svg {
             font-size: var.$font-size-sm !important;
