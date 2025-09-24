@@ -1,0 +1,1 @@
+export const values="Nos guiamos por la calidad en cada producto, la innovación constante para mejorar, la cercanía con clientes y colaboradores, y la responsabilidad hacia la comunidad y el medio ambiente.";
