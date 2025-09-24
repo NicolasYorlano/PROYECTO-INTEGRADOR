@@ -11,7 +11,7 @@ const Header = () => {
     const { shoppingCart } = shoppingCartContext;
     const navigate = useNavigate();
 
-    const handleShoppingCart = ()=>{
+    const handleShoppingCart = () => {
         navigate("/shopping-cart");
     };
 

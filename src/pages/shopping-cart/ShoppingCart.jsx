@@ -65,8 +65,8 @@ const ShoppingCart = () => {
                 <Text className="table__total" variant="p">Total: ${shoppingCart.totalAmount?.toFixed(2)}</Text>
             </div>
 
-            <ButtonPrimary onClick={clearCart}>Vaciar carrito</ButtonPrimary>
-            <ButtonPrimary onClick={handlePurchase}>Comprar</ButtonPrimary>
+            <ButtonPrimary size="md" onClick={clearCart}>Vaciar carrito</ButtonPrimary>
+            <ButtonPrimary size="md" onClick={handlePurchase}>Comprar</ButtonPrimary>
         </div>
     );
 };
