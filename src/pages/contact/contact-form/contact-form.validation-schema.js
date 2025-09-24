@@ -17,10 +17,10 @@ export const validationSchema = Yup.object({
         .required("El apellido es obligatorio"),
     email: Yup
         .string()
-        .email("El email debe ser un email válido")
+        .email("El email debe ser un email válido") // Proximamente: patron con Regex
         .required("El email es obligatorio"),
     phone: Yup
-        .string()
+        .string() // Proximamente: patron con Regex
         .min(PHONE_MIN_LENGTH, `El teléfono debe tener al menos ${PHONE_MIN_LENGTH} caracteres`)
         .max(PHONE_MAX_LENGTH, `El teléfono no puede tener más de ${PHONE_MAX_LENGTH} caracteres`)
         .required("El teléfono es obligatorio"),
