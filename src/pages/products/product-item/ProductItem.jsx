@@ -73,7 +73,7 @@ const ProductItem = (props) => {
                     <Text className="product-item__description" variant="p">{product.description}</Text>
                 </Skeleton>
                 <Skeleton className="product-item__price--skeleton" isLoading={isLoading}>
-                    <Text className="product-item__price" variant="span">${product.price.toFixed(2)}</Text>
+                    <Text className="product-item__price" variant="span">${product?.price?.toFixed(2) ?? "0.00"}</Text>
                 </Skeleton>
             </div>
 

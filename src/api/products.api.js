@@ -1,4 +1,14 @@
+import products from "@/api/data/product";
+
 const KEY_PRODUCTS = "products";
+
+const initialize = () => {
+    const product = products;
+
+    localStorage.setItem(KEY_PRODUCTS, JSON.stringify(product));
+
+    return product;
+};
 
 const generateId = (products) => {
     let maxId = 0;
@@ -14,7 +24,7 @@ const generateId = (products) => {
 
 const getProductsFromLocalStorage = () => {
     const data = localStorage.getItem(KEY_PRODUCTS);
-    return JSON.parse(data) || [];
+    return JSON.parse(data) || initialize();
 };
 
 const fetchProducts = () => {
