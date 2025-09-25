@@ -5,7 +5,7 @@ const products = [
         description: "Carne vacuna, lechuga, tomate y mayonesa.",
         price: 100,
         stock: 15,
-        thumbnail: "hamburguesa1.png",
+        thumbnail: "images/products/product01.png",
     },
     {
         id: 2,
@@ -13,7 +13,7 @@ const products = [
         description: "Doble carne con cheddar y panceta.",
         price: 120,
         stock: 12,
-        thumbnail: "hamburguesa2.png",
+        thumbnail: "images/products/product02.png",
     },
     {
         id: 3,
@@ -21,7 +21,7 @@ const products = [
         description: "Carne, queso, cebolla crispy y salsa BBQ.",
         price: 130,
         stock: 10,
-        thumbnail: "hamburguesa3.png",
+        thumbnail: "images/products/product03.png",
     },
     {
         id: 4,
@@ -29,7 +29,7 @@ const products = [
         description: "Medallón de garbanzos, lechuga y tomate.",
         price: 110,
         stock: 8,
-        thumbnail: "hamburguesa4.png",
+        thumbnail: "images/products/product04.png",
     },
     {
         id: 5,
@@ -37,7 +37,7 @@ const products = [
         description: "Carne con jalapeños, queso y salsa spicy.",
         price: 125,
         stock: 6,
-        thumbnail: "hamburguesa5.png",
+        thumbnail: "images/products/product05.png",
     },
     {
         id: 6,
@@ -45,7 +45,7 @@ const products = [
         description: "Carne angus, queso suizo y rúcula.",
         price: 150,
         stock: 5,
-        thumbnail: "hamburguesa6.png",
+        thumbnail: "images/products/product06.png",
     },
     {
         id: 7,
@@ -53,7 +53,7 @@ const products = [
         description: "Carne vacuna, huevo frito y chimichurri.",
         price: 135,
         stock: 9,
-        thumbnail: "hamburguesa7.png",
+        thumbnail: "images/products/product07.png",
     },
     {
         id: 8,
@@ -61,7 +61,7 @@ const products = [
         description: "Carne, jamón, queso, tomate y orégano.",
         price: 140,
         stock: 7,
-        thumbnail: "hamburguesa8.png",
+        thumbnail: "images/products/product08.png",
     },
     {
         id: 9,
@@ -69,7 +69,7 @@ const products = [
         description: "Carne, queso feta, aceitunas y tomate seco.",
         price: 145,
         stock: 6,
-        thumbnail: "hamburguesa9.png",
+        thumbnail: "images/products/product09.png",
     },
     {
         id: 10,
@@ -77,7 +77,7 @@ const products = [
         description: "Carne, triple cheddar y abundante panceta.",
         price: 160,
         stock: 4,
-        thumbnail: "hamburguesa10.png",
+        thumbnail: "images/products/product10.png",
     },
     {
         id: 11,
@@ -85,7 +85,7 @@ const products = [
         description: "Pechuga crispy, queso y mayonesa.",
         price: 115,
         stock: 11,
-        thumbnail: "hamburguesa11.png",
+        thumbnail: "images/products/product11.png",
     },
     {
         id: 12,
@@ -93,7 +93,7 @@ const products = [
         description: "Carne, queso, cebolla caramelizada y salsa ranch.",
         price: 135,
         stock: 7,
-        thumbnail: "hamburguesa12.png",
+        thumbnail: "images/products/product12.png",
     },
     {
         id: 13,
@@ -101,7 +101,7 @@ const products = [
         description: "Carne, mozzarella, pesto y rúcula.",
         price: 150,
         stock: 6,
-        thumbnail: "hamburguesa13.png",
+        thumbnail: "images/products/product13.png",
     },
     {
         id: 14,
@@ -109,7 +109,7 @@ const products = [
         description: "Carne, guacamole, nachos y salsa picante.",
         price: 145,
         stock: 5,
-        thumbnail: "hamburguesa14.png",
+        thumbnail: "images/products/product01.png",
     },
     {
         id: 15,
@@ -117,7 +117,7 @@ const products = [
         description: "Carne, queso, jamón y ananá.",
         price: 140,
         stock: 8,
-        thumbnail: "hamburguesa15.png",
+        thumbnail: "images/products/product02.png",
     },
     {
         id: 16,
@@ -125,7 +125,7 @@ const products = [
         description: "Carne doble, cheddar, panceta y huevo.",
         price: 170,
         stock: 3,
-        thumbnail: "hamburguesa16.png",
+        thumbnail: "images/products/product03.png",
     },
     {
         id: 17,
@@ -133,7 +133,7 @@ const products = [
         description: "Carne, cheddar, suizo, mozzarella y provolone.",
         price: 155,
         stock: 6,
-        thumbnail: "hamburguesa17.png",
+        thumbnail: "images/products/product04.png",
     },
     {
         id: 18,
@@ -141,7 +141,7 @@ const products = [
         description: "Medallón de lentejas, queso feta y rúcula.",
         price: 125,
         stock: 9,
-        thumbnail: "hamburguesa18.png",
+        thumbnail: "images/products/product05.png",
     },
     {
         id: 19,
@@ -149,7 +149,7 @@ const products = [
         description: "Doble pechuga crispy con cheddar.",
         price: 150,
         stock: 5,
-        thumbnail: "hamburguesa19.png",
+        thumbnail: "images/products/product06.png",
     },
     {
         id: 20,
@@ -157,7 +157,7 @@ const products = [
         description: "Triple carne, triple cheddar y panceta.",
         price: 200,
         stock: 2,
-        thumbnail: "hamburguesa20.png",
+        thumbnail: "images/products/product07.png",
     },
 ];
 
