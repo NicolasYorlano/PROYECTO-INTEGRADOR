@@ -61,6 +61,7 @@ const ProductItem = (props) => {
                         className="product-item__image"
                         src={`/${product.thumbnail}`}
                         alt={product.name}
+                        loading="lazy"
                         onClick={handleEditProduct}/>
                 </CardActionArea>
             </Skeleton>
