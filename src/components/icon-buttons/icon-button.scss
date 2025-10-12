@@ -3,6 +3,14 @@
 .icon-button {
     color: var.$color-neutro-100 !important;
 
+    .cart-badge .MuiBadge-badge {
+        background-color: var.$color-primary-600; 
+        color: var.$color-neutro-100; 
+        text-shadow: 0 0 4px rgba(0, 0, 0, 0.6);
+        font-weight: bold;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    }
+
     &:hover {
         background-color: var.$color-dark-alpha-100 !important;
     }

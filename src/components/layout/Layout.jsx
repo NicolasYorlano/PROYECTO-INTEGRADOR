@@ -3,7 +3,6 @@ import Footer from "./footer/Footer";
 import Header from "./header/Header";
 import "./layout.scss";
 import Main from "./main/Main";
-import Navbar from "./navbar/Navbar";
 
 const Layout = (props) => {
     const { children } = props;
@@ -11,7 +10,6 @@ const Layout = (props) => {
     return (
         <div className="layout">
             <Header/>
-            <Navbar/>
             <Main>{children}</Main>
             <Footer/>
         </div>

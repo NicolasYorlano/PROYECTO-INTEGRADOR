@@ -6,26 +6,31 @@
     flex-direction: column;
     align-items: center;
     gap: var.$spacing-xl;
+
     padding: var.$spacing-xl;
+    max-width: 1280px;
+    margin: 0 auto;
 
     .table {
         &__head {
             th {
-                color: var.$color-neutro-100;
+                color: var.$color-primary-300;
                 font-weight: var.$font-weight-regular;
-                font-size: var.$font-size-xxs;
+                font-size: var.$font-size-xs;
+                font-weight: bold;
             }
         }
 
         &__body {
             &:hover {
-                background-color: var.$color-neutro-300;
+                background-color: var.$color-neutro-900;
             }
 
             td {
                 color: var.$color-neutro-100;
                 font-weight: var.$font-weight-regular;
                 font-size: var.$font-size-xxs;
+                padding: var.$spacing-lg 0;
             }
         }
 
@@ -41,5 +46,10 @@
             font-weight: var.$font-weight-bold;
             font-size: var.$font-size-xxs;
         }
+    }
+
+    &__actions {
+        display: flex;
+        gap: var.$spacing-xl;
     }
 }

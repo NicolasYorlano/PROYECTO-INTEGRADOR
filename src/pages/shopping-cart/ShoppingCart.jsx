@@ -12,6 +12,11 @@ const ShoppingCart = () => {
 
     const handlePurchase = async () => {
         try {
+            if (!shoppingCart.articles || shoppingCart.articles.length === 0) {
+                alert("No hay productos seleccionados");
+                return;
+            }
+
             for (const article of shoppingCart.articles) {
                 const product = await fetchProductById(article.id);
 
@@ -65,8 +70,10 @@ const ShoppingCart = () => {
                 <Text className="table__total" variant="p">Total: ${shoppingCart.totalAmount?.toFixed(2)}</Text>
             </div>
 
-            <ButtonPrimary size="md" onClick={clearCart}>Vaciar carrito</ButtonPrimary>
-            <ButtonPrimary size="md" onClick={handlePurchase}>Comprar</ButtonPrimary>
+            <div className="shopping-cart__actions">
+                <ButtonPrimary size="md" onClick={clearCart}>Vaciar carrito</ButtonPrimary>
+                <ButtonPrimary size="md" onClick={handlePurchase}>Comprar</ButtonPrimary>
+            </div>
         </div>
     );
 };

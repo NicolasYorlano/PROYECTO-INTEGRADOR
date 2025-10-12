@@ -2,12 +2,16 @@
 
 .product-item {
     overflow: hidden;
+    border-radius: var.$spacing-3xs;
+    box-shadow: 0 0 2px rgba(245, 245, 245, 0.3);
+    background-color: var.$color-neutro-100;
 
     &__image {
         object-fit: cover;
         height: auto;
         width: 100%;
         aspect-ratio: 16/9;
+        filter: brightness(80%);
 
         &--skeleton {
             height: auto;

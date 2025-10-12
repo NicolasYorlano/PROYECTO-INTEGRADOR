@@ -16,11 +16,20 @@
         padding: 0 var.$spacing-xs;
     }
 
-    &__image {
-        height: fit-content;
+    &__image-wrapper {
         width: 25%;
         float: left;
-        margin: 0 var.$spacing-xs var.$spacing-3xs 0;
-        padding: 0 var.$spacing-md var.$spacing-md var.$spacing-md;
+        box-shadow: 0 0 2px rgba(245, 245, 245, 0.3);
+        border-radius: 8px;
+        overflow: hidden;
+        margin: 0 var.$spacing-3xl var.$spacing-3xs 0;
     }
+
+    &__image {
+        height: fit-content;
+        width: 100%;
+        filter: brightness(70%);
+        display: block;
+    }
+
 }

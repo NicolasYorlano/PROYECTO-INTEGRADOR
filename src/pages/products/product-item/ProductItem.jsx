@@ -61,7 +61,6 @@ const ProductItem = (props) => {
                         className="product-item__image"
                         src={`/${product.thumbnail}`}
                         alt={product.name}
-                        alt="Imagen del producto"
                         onClick={handleEditProduct}/>
                 </CardActionArea>
             </Skeleton>

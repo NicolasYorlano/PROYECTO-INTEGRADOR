@@ -16,7 +16,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="navbar">
+        <nav className="navbar header">
             <Menu className="navbar__menu-icon" onClick={onClickOpenDrawer}/>
             <NavbarList className="navbar__menu-list"/>
             <Drawer

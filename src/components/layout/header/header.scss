@@ -3,23 +3,23 @@
 .header {
     grid-area: header;
 
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: var.$spacing-3xs;
-
-    :first-child {
-        grid-column: 2;
-        justify-content: center;
-    }
-
-    :last-child {
-        grid-column: 3;
-        justify-self: end;
-        align-self: start;
-    }
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 
     &__title {
         color: var.$color-neutro-100;
         text-align: center;
     }
+
+    &__right {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__shopping-cart {
+        margin-left: auto;
+    }
+
 }
