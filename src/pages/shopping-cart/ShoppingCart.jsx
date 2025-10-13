@@ -72,7 +72,7 @@ const ShoppingCart = () => {
 
             <div className="shopping-cart__actions">
                 <ButtonPrimary size="md" onClick={clearCart}>Vaciar carrito</ButtonPrimary>
-                <ButtonPrimary size="md" onClick={handlePurchase}>Comprar</ButtonPrimary>
+                <ButtonPrimary size="md" onClick={handlePurchase}>Realizar pedido</ButtonPrimary>
             </div>
         </div>
     );

@@ -2,10 +2,10 @@
 
 .vision {
     &__title {
+        text-align: center;
         color: var.$color-neutro-100;
-        font-size: var.$font-size-sm;
         font-weight: var.$font-weight-bold;
-        padding: 0 var.$spacing-xs var.$spacing-xs var.$spacing-xs;
+        padding: 0 0 var.$spacing-3xl 0;
     }
 
     &__description {
@@ -14,6 +14,7 @@
         font-weight: var.$font-weight-regular;
         text-align: justify;
         padding: 0 var.$spacing-xs;
+        padding: var.$spacing-10xl 0 0 0;
     }
 
     &__image-wrapper {
@@ -23,12 +24,14 @@
         border-radius: 8px;
         overflow: hidden;
         margin: 0 0 var.$spacing-xs var.$spacing-3xl;
+        transform: rotate(4deg);
     }
 
     &__image {
+        display: block;
+
         height: fit-content;
         width: 100%;
         filter: brightness(70%);
-        display: block;
     }
 }

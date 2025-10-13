@@ -18,18 +18,18 @@ const Home = () => {
                 </div>
 
                 <div className="slider__text">
-                    <Text variant="h3">Las mejores hamburguesas de La Plata</Text>
+                    <Text variant="h3">Las mejores Hamburguesas de La Plata</Text>
                     <Text variant="p">Mirá nuestros productos destacados <a href="#products-highlighted">acá</a></Text>
                 </div>
             </article>
 
             <article className="highlighted-products">
-                <Text className="title title--highlighted-products" id="products-highlighted" variant="h2">Nuestros productos más destacados</Text>
+                <Text className="highlighted-products__title" id="products-highlighted" variant="h2">Nuestros productos más destacados</Text>
 
                 <div className="card card--highlighted">
                     <div className="card--highlighted--float">
-                        <Text className="card__title card__title--highlighted" variant="h3">Producto Destacado 1</Text>
-                        <Text className="card__description card__description--highlighted" variant="p">Descripción del producto 1</Text>
+                        <Text className="card__title card__title--highlighted" variant="h3">Hamburguesa Clásica</Text>
+                        <Text className="card__description card__description--highlighted" variant="p">Carne vacuna, lechuga, tomate y mayonesa.</Text>
                     </div>
                     <img
                         className="card__image"
@@ -39,8 +39,8 @@ const Home = () => {
 
                 <div className="card card--highlighted">
                     <div className="card--highlighted--float">
-                        <Text className="card__title card__title--highlighted" variant="h3">Producto Destacado 2</Text>
-                        <Text className="card__description card__description--highlighted" variant="p">Descripción del producto 2</Text>
+                        <Text className="card__title card__title--highlighted" variant="h3">Hamburguesa Doble Queso</Text>
+                        <Text className="card__description card__description--highlighted" variant="p">Doble carne con cheddar y panceta.</Text>
                     </div>
                     <img
                         className="card__image"
@@ -50,8 +50,8 @@ const Home = () => {
 
                 <div className="card card--highlighted">
                     <div className="card--highlighted--float">
-                        <Text className="card__title card__title--highlighted" variant="h3">Producto Destacado 3</Text>
-                        <Text className="card__description card__description--highlighted" variant="p">Descripción del producto 3</Text>
+                        <Text className="card__title card__title--highlighted" variant="h3">Hamburguesa BBQ</Text>
+                        <Text className="card__description card__description--highlighted" variant="p">Carne, queso, cebolla crispy y salsa BBQ.</Text>
                     </div>
                     <img
                         className="card__image"

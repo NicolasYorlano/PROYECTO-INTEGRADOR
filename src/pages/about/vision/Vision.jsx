@@ -10,7 +10,7 @@ const Vision = () => {
     return (
         <section className="vision">
             <Text className="vision__title" variant="h3">Nuestra Visión</Text>
-            <div>
+            <div className="mission__content">
                 <div className="vision__image-wrapper">
                     <img className="vision__image" src={"/images/about/vision.png"} alt="Imagen de la visión de la empresa"/>
                 </div>

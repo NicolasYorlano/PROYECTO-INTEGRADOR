@@ -14,7 +14,7 @@
         p,
         label,
         label.Mui-focused {
-            color: var.$color-neutro-900 !important;
+            color: black !important;
             background-color: white !important;
             ;
         }
@@ -25,7 +25,7 @@
         div input:focus+fieldset,
         div input:focus~.MuiOutlinedInput-notchedOutline,
         div textarea:focus~.MuiOutlinedInput-notchedOutline {
-            border-color: var.$color-neutro-900 !important;
+            border-color: black !important;
             background-color: white !important;
             ;
         }
@@ -36,7 +36,7 @@
         p,
         label,
         label.Mui-focused {
-            color: var.$color-neutro-900 !important;
+            color: black !important;
             background-color: white !important;
             ;
         }
@@ -47,7 +47,7 @@
         div input:focus+fieldset,
         div input:focus~.MuiOutlinedInput-notchedOutline,
         div textarea:focus~.MuiOutlinedInput-notchedOutline {
-            border-color: var.$color-neutro-900 !important;
+            border-color: black !important;
             background-color: white !important;
 
         }

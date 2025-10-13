@@ -6,6 +6,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: var.$spacing-xxs 0;
 
     &__title {
         color: var.$color-neutro-100;

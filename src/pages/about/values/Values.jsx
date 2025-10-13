@@ -10,7 +10,7 @@ const Values = () => {
     return (
         <section className="values">
             <Text className="values__title" variant="h3">Nuestros Valores</Text>
-            <div>
+            <div className="mission__content">
                 <div className="values__image-wrapper">
                     <img className="values__image" src={"/images/about/values.png"} alt="Imagen de los valores de la empresa"/>
                 </div>
