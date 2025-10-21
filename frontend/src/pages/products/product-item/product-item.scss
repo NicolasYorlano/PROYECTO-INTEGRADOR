@@ -102,4 +102,9 @@
             font-size: var.$font-size-sm !important;
         }
     }
+
+    &:hover {
+        transform: scale(1.01);
+        box-shadow: 0 0 12px rgba(255, 255, 255, 0.25);
+    }
 }
