@@ -1,7 +1,7 @@
 const products = [
     {
         id: 1,
-        name: "Hamburguesa Clásica",
+        name: "Clásica",
         description: "Carne vacuna, lechuga, tomate y mayonesa.",
         price: 100,
         stock: 15,
@@ -9,7 +9,7 @@ const products = [
     },
     {
         id: 2,
-        name: "Hamburguesa Doble Queso",
+        name: "Doble Queso",
         description: "Doble carne con cheddar y panceta.",
         price: 120,
         stock: 12,
@@ -17,7 +17,7 @@ const products = [
     },
     {
         id: 3,
-        name: "Hamburguesa BBQ",
+        name: "BBQ",
         description: "Carne, queso, cebolla crispy y salsa BBQ.",
         price: 130,
         stock: 10,
@@ -25,7 +25,7 @@ const products = [
     },
     {
         id: 4,
-        name: "Hamburguesa Veggie",
+        name: "Veggie",
         description: "Medallón de garbanzos, lechuga y tomate.",
         price: 110,
         stock: 8,
@@ -33,7 +33,7 @@ const products = [
     },
     {
         id: 5,
-        name: "Hamburguesa Picante",
+        name: "Picante",
         description: "Carne con jalapeños, queso y salsa spicy.",
         price: 125,
         stock: 6,
@@ -41,7 +41,7 @@ const products = [
     },
     {
         id: 6,
-        name: "Hamburguesa Premium",
+        name: "Premium",
         description: "Carne angus, queso suizo y rúcula.",
         price: 150,
         stock: 5,
@@ -49,7 +49,7 @@ const products = [
     },
     {
         id: 7,
-        name: "Hamburguesa Criolla",
+        name: "Criolla",
         description: "Carne vacuna, huevo frito y chimichurri.",
         price: 135,
         stock: 9,
@@ -57,7 +57,7 @@ const products = [
     },
     {
         id: 8,
-        name: "Hamburguesa Napolitana",
+        name: "Napolitana",
         description: "Carne, jamón, queso, tomate y orégano.",
         price: 140,
         stock: 7,
@@ -65,7 +65,7 @@ const products = [
     },
     {
         id: 9,
-        name: "Hamburguesa Mediterránea",
+        name: "Mediterránea",
         description: "Carne, queso feta, aceitunas y tomate seco.",
         price: 145,
         stock: 6,
@@ -73,7 +73,7 @@ const products = [
     },
     {
         id: 10,
-        name: "Hamburguesa Bacon Lover",
+        name: "Bacon Lover",
         description: "Carne, triple cheddar y abundante panceta.",
         price: 160,
         stock: 4,
@@ -81,7 +81,7 @@ const products = [
     },
     {
         id: 11,
-        name: "Hamburguesa Pollo Crispy",
+        name: "Pollo Crispy",
         description: "Pechuga crispy, queso y mayonesa.",
         price: 115,
         stock: 11,
@@ -89,7 +89,7 @@ const products = [
     },
     {
         id: 12,
-        name: "Hamburguesa Ranchera",
+        name: "Ranchera",
         description: "Carne, queso, cebolla caramelizada y salsa ranch.",
         price: 135,
         stock: 7,
@@ -97,7 +97,7 @@ const products = [
     },
     {
         id: 13,
-        name: "Hamburguesa Italiana",
+        name: "Italiana",
         description: "Carne, mozzarella, pesto y rúcula.",
         price: 150,
         stock: 6,
@@ -105,7 +105,7 @@ const products = [
     },
     {
         id: 14,
-        name: "Hamburguesa Mexicana",
+        name: "Mexicana",
         description: "Carne, guacamole, nachos y salsa picante.",
         price: 145,
         stock: 5,
@@ -113,7 +113,7 @@ const products = [
     },
     {
         id: 15,
-        name: "Hamburguesa Hawaiana",
+        name: "Hawaiana",
         description: "Carne, queso, jamón y ananá.",
         price: 140,
         stock: 8,
@@ -121,7 +121,7 @@ const products = [
     },
     {
         id: 16,
-        name: "Hamburguesa Deluxe",
+        name: "Deluxe",
         description: "Carne doble, cheddar, panceta y huevo.",
         price: 170,
         stock: 3,
@@ -129,7 +129,7 @@ const products = [
     },
     {
         id: 17,
-        name: "Hamburguesa Cuatro Quesos",
+        name: "Cuatro Quesos",
         description: "Carne, cheddar, suizo, mozzarella y provolone.",
         price: 155,
         stock: 6,
@@ -137,7 +137,7 @@ const products = [
     },
     {
         id: 18,
-        name: "Hamburguesa Mediterránea Veggie",
+        name: "Mediterránea Veggie",
         description: "Medallón de lentejas, queso feta y rúcula.",
         price: 125,
         stock: 9,
@@ -145,7 +145,7 @@ const products = [
     },
     {
         id: 19,
-        name: "Hamburguesa Doble Pollo",
+        name: "Doble Pollo",
         description: "Doble pechuga crispy con cheddar.",
         price: 150,
         stock: 5,
@@ -153,7 +153,7 @@ const products = [
     },
     {
         id: 20,
-        name: "Hamburguesa Monster",
+        name: "Monster",
         description: "Triple carne, triple cheddar y panceta.",
         price: 200,
         stock: 2,
