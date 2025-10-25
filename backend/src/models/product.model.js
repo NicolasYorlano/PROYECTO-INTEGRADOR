@@ -36,8 +36,8 @@ const productSchema = new Schema({
         default: false,
     },
 }, {
-    timestamps: true, // Creará dos campos: createdAt y updatedAt
-    versionKey: false, // No creará el campo __v
+    timestamps: true, // Creará dos campos adicionales: createdAt y updatedAt
+    versionKey: false, // No creará el campo __v en cada registro
 });
 
 const ProductModel = model("products", productSchema);
