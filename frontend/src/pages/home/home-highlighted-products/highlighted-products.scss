@@ -1,0 +1,62 @@
+@use "@/scss/variables" as var;
+
+.highlighted-products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var.$spacing-lg;
+
+    &__title {
+        padding: var.$spacing-sm 0;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        gap: var.$spacing-md;
+        border: 1px solid var.$color-neutro-900;
+        border-radius: var.$spacing-3xs;
+        box-shadow: 0 0 2px rgba(245, 245, 245, 0.3);
+
+        &__image {
+            width: 100%;
+            border-radius: inherit;
+            filter: brightness(50%);
+        }
+
+        &__title,
+        &__description {
+            text-align: center;
+        }
+    }
+
+    .card--highlighted {
+        border: none;
+        padding: 0;
+        width: 25vw;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card--highlighted--float {
+        position: absolute;
+        z-index: 200;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: var.$spacing-xs;
+        text-align: center;
+
+        Text {
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+            color: var.$color-neutro-300;
+        }
+
+        .card__description {
+            font-size: var.$font-size-sm;
+        }
+    }
+}
