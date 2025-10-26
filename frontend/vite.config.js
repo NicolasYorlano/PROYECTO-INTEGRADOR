@@ -8,5 +8,10 @@ export default defineConfig({
         alias: {
             "@": path.resolve(__dirname, "./src"),
         },
+        dedupe: [ "@emotion/react", "@emotion/styled" ], // Resuelve conflicto de paquetes de emotion
+    },
+    build: {
+        outDir: "dist",
+        emptyOutDir: true,
     },
 });
