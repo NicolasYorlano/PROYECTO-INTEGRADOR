@@ -2,13 +2,17 @@
   "name": "frontend",
   "private": true,
   "version": "0.0.0",
+  "description": "Proyecto Integrador EIT Fase 2 - Frontend",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint src --ext js,jsx --fix",
+    "lint": "eslint ./src --fix",
     "preview": "vite preview"
   },
+  "keywords": [],
+  "author": "Nicolas Yorlano",
+  "license": "MIT",
   "dependencies": {
     "@emotion/styled": "^11.14.1",
     "@mui/icons-material": "^7.3.1",
@@ -36,3 +40,4 @@
     "vite": "^7.0.4"
   }
 }
+
