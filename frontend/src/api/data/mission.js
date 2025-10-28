@@ -1,1 +1,0 @@
-export const mission="En Hamburguesas LP nos proponemos crear hamburguesas de calidad, usando ingredientes frescos y ofreciendo un servicio rápido y cercano para que cada cliente disfrute de una experiencia única.";

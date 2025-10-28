@@ -8,7 +8,11 @@ const InstitutionLogo = (props) => {
 
     return (
         <div className={classes} {...restProps}>
-            <Text className="institution-logo__title" variant="h1">Hamburguesas LP</Text>
+            {institution.name && (
+                <>
+                    <Text className="institution-logo__title" variant="h1">{institution.name}</Text>
+                </>
+            )}
         </div>
     );
 };

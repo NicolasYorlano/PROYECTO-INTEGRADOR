@@ -1,1 +1,0 @@
-export const vision="Queremos que Hamburguesas LP sea reconocida como la hamburguesería de referencia en la región, destacándonos por nuestro sabor, la innovación y la forma en que conectamos con cada persona.";

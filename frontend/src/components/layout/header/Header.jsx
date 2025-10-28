@@ -20,7 +20,7 @@ const Header = () => {
         <header className="header">
             <InstitutionLogo className="header_institution"/>
 
-            <div className="header__right">
+            <div className="header__options">
                 <Navbar className="header__navbar"></Navbar>
                 <IconButtonBadge
                     className="header__shopping-cart"

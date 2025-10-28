@@ -1,4 +1,5 @@
 import { Text } from "@/components/texts";
+import { API_URL_IMAGES } from "@/constants/api.constant";
 import AppContext from "@/contexts/AppContext";
 import { useContext } from "react";
 import "./mission.scss";
@@ -10,11 +11,15 @@ const Mission = () => {
     return (
         <section className="mission">
             <Text className="mission__title" variant="h3">Nuestra Misión</Text>
-            <div className="mission__content">
-                <div className="mission__image-wrapper">
-                    <img className="mission__image" src={"/images/about/mission.png"} alt="Imagen de la misión de la empresa"/>
-                </div>
-                <Text className="mission__description" variant="p">{institution.about.mission}</Text>
+            <div>
+                {institution.mission && institution.mission.description && (
+                    <>
+                        <div className="mission__image-wrapper">
+                            <img className="mission__image" src={`${API_URL_IMAGES}/institutions/${institution.mission.thumbnail}`} alt="Imagen de la misión de la empresa"/>
+                        </div>
+                        <Text className="mission__description" variant="p">{institution.mission.description}</Text>
+                    </>
+                )}
             </div>
         </section>
     );
