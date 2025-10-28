@@ -9,14 +9,32 @@
         bottom: -1.25rem;
     }
 
+    &__image {
+        label {
+            position: absolute;
+            top: -0.45rem;
+            left: 0.55rem;
+            padding: 0 0.35rem;
+            background-color: var.$color-neutro-200;
+            border-radius: 0.25rem;
+            color: var.$color-primary-800;
+            font-size: var.$font-size-xs;
+        }
+
+        img {
+            width: 100%;
+            border: 1px solid var.$color-primary-800 !important;
+            border-radius: 0.25rem;
+            object-fit: cover;
+        }
+    }
+
     &--valid {
 
         p,
         label,
         label.Mui-focused {
-            color: black !important;
-            background-color: white !important;
-            ;
+            color: var.$color-primary-800 !important;
         }
 
         div input+fieldset,
@@ -25,9 +43,7 @@
         div input:focus+fieldset,
         div input:focus~.MuiOutlinedInput-notchedOutline,
         div textarea:focus~.MuiOutlinedInput-notchedOutline {
-            border-color: black !important;
-            background-color: white !important;
-            ;
+            border-color: var.$color-primary-800 !important;
         }
     }
 
@@ -36,9 +52,7 @@
         p,
         label,
         label.Mui-focused {
-            color: black !important;
-            background-color: white !important;
-            ;
+            color: var.$color-danger-500 !important;
         }
 
         div input+fieldset,
@@ -47,9 +61,7 @@
         div input:focus+fieldset,
         div input:focus~.MuiOutlinedInput-notchedOutline,
         div textarea:focus~.MuiOutlinedInput-notchedOutline {
-            border-color: black !important;
-            background-color: white !important;
-
+            border-color: var.$color-danger-500 !important;
         }
     }
 

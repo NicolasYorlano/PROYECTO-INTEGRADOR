@@ -9,17 +9,17 @@ const AppProvider = (props) => {
     const { children } = props;
 
     const institutionContext = useInstitution();
+    const inquiryContext = useInquiry();
     const productsContext = useProduct();
     const shoppingCartContext = useShoppingCart();
-    const inquiryContext = useInquiry();
 
     return (
         <AppContext.Provider
             value={{
                 institutionContext,
+                inquiryContext,
                 productsContext,
                 shoppingCartContext,
-                inquiryContext,
             }}>
             {children}
         </AppContext.Provider>
