@@ -19,9 +19,9 @@ const PORT = process.env.PORT;
 const HOST = process.env.HOST;
 
 // Declaración de rutas
+app.use("/api/institutions", institutionRouter);
 app.use("/api/products", productRouter);
 app.use("/api/inquiry", inquiryRouter);
-app.use("/api/institutions", institutionRouter);
 
 // Control de rutas inexistentes
 app.use((req, res) => {

@@ -7,8 +7,8 @@ export default class ErrorService extends Error {
 
     // Constructor para inicializar el mensaje y el código del error
     constructor(message, code = 500) {
-        super(message); // Llama al constructor de la clase Error
-        this.code = code; // Guarda el código de error
+        super(message);
+        this.code = code;
     }
 
     // Método estático para manejar errores con mensajes y códigos apropiados
