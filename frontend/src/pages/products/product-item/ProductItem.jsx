@@ -1,7 +1,7 @@
 import { ButtonPrimary } from "@/components/buttons";
 import { Skeleton } from "@/components/skeleton";
 import { Text } from "@/components/texts";
-import { API_URL } from "@/constants/api.constant";
+import { API_URL_IMAGES } from "@/constants/api.constant";
 import AppContext from "@/contexts/AppContext";
 import RemoveShoppingCartIcon from "@mui/icons-material/RemoveShoppingCart";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
@@ -37,6 +37,12 @@ const ProductItem = (props) => {
         subtractArticle(product.id, 1);
     };
 
+    const getSourceImage = () => {
+        return product.thumbnail === "default.jpg"
+            ? `${API_URL_IMAGES}/${product.thumbnail}`
+            : `${API_URL_IMAGES}/products/${product.thumbnail}`;
+    };
+
     const renderActions = () => {
         if (product.stock === 0) {
             return (<Text className="product-item__control-stock" variant="p">SIN STOCK</Text>);
@@ -60,9 +66,8 @@ const ProductItem = (props) => {
                 <CardActionArea>
                     <img
                         className="product-item__image"
-                        src={`${API_URL}/products/${product.thumbnail}`}
-                        alt={product.name}
-                        loading="lazy"
+                        src={getSourceImage()}
+                        alt="Imagen del producto"
                         onClick={handleEditProduct}/>
                 </CardActionArea>
             </Skeleton>
@@ -75,7 +80,7 @@ const ProductItem = (props) => {
                     <Text className="product-item__description" variant="p">{product.description}</Text>
                 </Skeleton>
                 <Skeleton className="product-item__price--skeleton" isLoading={isLoading}>
-                    <Text className="product-item__price" variant="span">${product?.price?.toFixed(2) ?? "0.00"}</Text>
+                    <Text className="product-item__price" variant="span">${product.price.toFixed(2)}</Text>
                 </Skeleton>
             </div>
 
@@ -88,7 +93,7 @@ const ProductItem = (props) => {
 
 ProductItem.propTypes = {
     product: PropTypes.shape({
-        id: PropTypes.number.isRequired,
+        id: PropTypes.string.isRequired,
         name: PropTypes.string.isRequired,
         description: PropTypes.string.isRequired,
         price: PropTypes.number.isRequired,
