@@ -2,30 +2,27 @@ import { API_URL } from "@/constants/api.constant.js";
 
 const sendInquiry = async (values) => {
     try {
-        const response = await fetch(`${API_URL}/inquiry/send-mail`, {
+        const options = {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
             },
             body: JSON.stringify(values),
-        });
+        };
 
-        if (response.status === 204) {
-            return true;
-        }
+        const response = await fetch(`${API_URL}/inquiry/send-mail`, options);
 
-        if (!response.ok) {
-            const data = await response.json();
-            throw new Error(data.message || "Error al enviar la consulta");
+        if (response.status != 204) {
+            throw new Error("Error al enviar el email");
         }
 
         return true;
     } catch (error) {
-        console.error(`Error al enviar la consulta. Causa: ${error.message}`);
+        console.log(error.message);
         throw error;
     }
 };
 
 export default {
     sendInquiry,
-}; 
+};

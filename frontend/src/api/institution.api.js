@@ -5,14 +5,14 @@ const fetchInstitution = async () => {
         const response = await fetch(`${API_URL}/institutions/first`);
         const data = await response.json();
 
-        if (data.status === "success") {
-            const institution = data.payload;
-            return institution;
+        if (response.status != 200) {
+            throw new Error("Error al obtener la institución");
         }
 
-        throw new Error(data.message || "Error al obtener datos institucionales");
+        const institution = data.payload;
+        return institution;
     } catch (error) {
-        console.error("Error fetching institution:", error);
+        console.log(error.message);
         throw error;
     }
 };
