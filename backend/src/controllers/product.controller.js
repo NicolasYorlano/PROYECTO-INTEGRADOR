@@ -73,7 +73,7 @@ export default class ProductController {
             const { id } = req.params;
             await this.#productService.delete(id);
 
-            res.status(200).json({ status: "success" });
+            res.status(204).send();
         } catch (error) {
             const handledError = ErrorService.handleError(error);
             res.status(handledError.code).json({ status: "error", message: handledError.message });
