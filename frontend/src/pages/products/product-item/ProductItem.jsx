@@ -1,6 +1,7 @@
 import { ButtonPrimary } from "@/components/buttons";
 import { Skeleton } from "@/components/skeleton";
 import { Text } from "@/components/texts";
+import { API_URL } from "@/constants/api.constant";
 import AppContext from "@/contexts/AppContext";
 import RemoveShoppingCartIcon from "@mui/icons-material/RemoveShoppingCart";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
@@ -59,7 +60,7 @@ const ProductItem = (props) => {
                 <CardActionArea>
                     <img
                         className="product-item__image"
-                        src={`/${product.thumbnail}`}
+                        src={`${API_URL}/products/${product.thumbnail}`}
                         alt={product.name}
                         loading="lazy"
                         onClick={handleEditProduct}/>
