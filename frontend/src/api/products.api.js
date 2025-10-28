@@ -101,10 +101,25 @@ const removeProduct = async (id) => {
     }
 };
 
+/*
+const fetchHighlightedProducts = async () => {
+    try {
+        const response = await fetch(`${API_URL}/products?highlighter=true`);
+        const data = await response.json();
+
+        return data.payload.map(mapProduct);
+    } catch (error) {
+        console.log(error.message);
+        throw error;
+    }
+};
+*/
+
 export default {
     fetchProducts,
     fetchProductById,
     createProduct,
     updateProduct,
     removeProduct,
+    //fetchHighlightedProducts
 };
