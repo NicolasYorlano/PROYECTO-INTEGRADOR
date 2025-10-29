@@ -10,12 +10,12 @@ const ProductGallery = () => {
 
     return (
         <div className="product-gallery">
-            <ProductNewItem/>
+            <ProductNewItem />
             {products.map((product) => (
                 <ProductItem
                     key={product.id}
                     product={product}
-                    isLoading={isLoading}/>
+                    isLoading={isLoading} />
             ))}
         </div>
     );

@@ -1,6 +1,6 @@
 import { Text } from "@/components/texts";
 import ProductGallery from "./product-gallery/ProductGallery";
-import ProductSerch from "./product-serch/ProductSerch";
+import ProductSerch from "./product-search/ProductSerch";
 import "./products.scss";
 
 const Products = () => {

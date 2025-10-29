@@ -1,24 +1,18 @@
 import PropTypes from "prop-types";
 import Input from "./Input";
 
-const InputSearch = (props) => {
-    const {
-        formik,
-        maxLength = 30,
-        ...restProps
-    } = props;
-
+const InputSearch = ({ formik, name, maxLength = 30, label, ...restProps }) => {
     return (
         <Input
             type="text"
-            id="searchProduct"
-            name="searchProduct"
-            label="Ingresa para buscar"
-            value={formik.values.searchProduct}
+            id={name}
+            name={name}
+            label={label}
+            value={formik.values[name]}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
-            error={formik.touched.searchProduct && Boolean(formik.errors.searchProduct)}
-            helperText={formik.touched.searchProduct && formik.errors.searchProduct}
+            error={formik.touched[name] && Boolean(formik.errors[name])}
+            helperText={formik.touched[name] && formik.errors[name]}
             inputProps={{ maxLength }}
             {...restProps}/>
     );
@@ -26,13 +20,15 @@ const InputSearch = (props) => {
 
 InputSearch.propTypes = {
     formik: PropTypes.shape({
-        values: PropTypes.shape({ searchProduct: PropTypes.string.isRequired }).isRequired,
+        values: PropTypes.shape({ query: PropTypes.string.isRequired }).isRequired,
         handleChange: PropTypes.func.isRequired,
         handleBlur: PropTypes.func.isRequired,
-        touched: PropTypes.shape({ searchProduct: PropTypes.bool }).isRequired,
-        errors: PropTypes.shape({ searchProduct: PropTypes.string }).isRequired,
+        touched: PropTypes.shape({ query: PropTypes.bool }).isRequired,
+        errors: PropTypes.shape({ query: PropTypes.string }).isRequired,
     }).isRequired,
+    name: PropTypes.string,
     maxLength: PropTypes.number,
+    label: PropTypes.string,
 };
 
 export default InputSearch;
