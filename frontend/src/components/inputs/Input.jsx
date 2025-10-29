@@ -23,24 +23,18 @@ const Input = (props) => {
 
     return (
         <FormControl fullWidth className={classes}>
-            <InputLabel htmlFor={id || name} size={size}>{label}</InputLabel>
+            <InputLabel htmlFor="outlined-adornment-amount" size={size}>{label}</InputLabel>
             <OutlinedInput
                 id={id || name}
                 label={label}
                 name={name}
                 type={type}
-                value={value ?? ""}
+                value={value}
                 onChange={onChange}
                 onBlur={onBlur}
                 error={error}
                 size={size}
                 endAdornment={endAdornment}
-                sx={{
-                    "& .MuiOutlinedInput-input": {
-                        color: "black", // color del texto
-                        backgroundColor: "white", // fondo del campo
-                    },
-                }}
                 {...restProps} />
             {helperText && (
                 <FormHelperText className="input__helper-text" error={error} size={size}>{helperText}</FormHelperText>

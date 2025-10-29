@@ -13,8 +13,8 @@ const HighlightedProduct = () => {
                 </div>
                 <img
                     className="card__image"
-                    src="/images/highlighted/image1.png"
-                    alt="highlighted-1.png"/>
+                    src="/highlighted/highlighted-1.png"
+                    alt="Producto destacado 1"/>
             </article>
 
             <article className="card card--highlighted">
@@ -24,8 +24,8 @@ const HighlightedProduct = () => {
                 </div>
                 <img
                     className="card__image"
-                    src="/images/highlighted/image2.png"
-                    alt="highlighted-2.png"/>
+                    src="/highlighted/highlighted-2.png"
+                    alt="Producto destacado 2"/>
             </article>
 
             <article className="card card--highlighted">
@@ -35,8 +35,8 @@ const HighlightedProduct = () => {
                 </div>
                 <img
                     className="card__image"
-                    src="/images/highlighted/image3.png"
-                    alt="highlighted-3.png"/>
+                    src="/highlighted/highlighted-3.png"
+                    alt="Producto destacado 3"/>
             </article>
         </section>
     );

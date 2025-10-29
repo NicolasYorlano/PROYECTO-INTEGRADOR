@@ -3,10 +3,18 @@
 .input {
     position: relative;
     max-width: 400px;
+    border-radius: var.$spacing-3xs;
+    box-shadow: 0 0 2px rgba(245, 245, 245, 0.3);
+    background-color: var.$color-neutro-100;
+    border: none;
 
     &__helper-text {
         position: absolute;
-        bottom: -1.25rem;
+        bottom: -1.6rem;
+    }
+
+    &__label {
+        font-weight: bold;
     }
 
     &__image {
@@ -18,7 +26,6 @@
             background-color: var.$color-neutro-100;
             border-radius: 0.25rem;
             color: var.$color-primary-800;
-            font-size: var.$font-size-xs;
         }
 
         img {
@@ -34,7 +41,8 @@
         p,
         label,
         label.Mui-focused {
-            color: var.$color-primary-800 !important;
+            color: var.$color-primary-600 !important;
+            font-weight: bold;
         }
 
         div input+fieldset,
@@ -53,6 +61,7 @@
         label,
         label.Mui-focused {
             color: var.$color-danger-500 !important;
+            font-weight: bold;
         }
 
         div input+fieldset,
