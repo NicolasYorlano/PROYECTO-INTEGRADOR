@@ -6,13 +6,13 @@ const HomeSlider = () => {
         <article className="slider">
             <div className="slider__slides">
                 <div className="slider__slide">
-                    <img src="/images/slider/slide1.jpg" alt="Image-slider-1" />
+                    <img src="/slider/slide1.jpg" alt="Image-slider-1" />
                 </div>
                 <div className="slider__slide">
-                    <img src="/images/slider/slide2.jpg" alt="Image-slider-2" />
+                    <img src="/slider/slide2.jpg" alt="Image-slider-2" />
                 </div>
                 <div className="slider__slide">
-                    <img src="/images/slider/slide3.jpg" alt="Image-slider-3" />
+                    <img src="/slider/slide3.jpg" alt="Image-slider-3" />
                 </div>
             </div>
 

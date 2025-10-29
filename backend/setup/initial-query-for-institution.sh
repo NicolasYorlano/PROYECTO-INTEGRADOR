@@ -1,5 +1,5 @@
 db.institutions.insertOne({
-    name: "Mi App",
+    name: "Hamburguesas LP",
     address: "Av. Siempreviva 100, San Juan, Argentina",
     phone: "+54 264 1234-5678",
     email: "info@miapp.com",

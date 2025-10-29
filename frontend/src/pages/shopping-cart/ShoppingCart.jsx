@@ -1,44 +1,14 @@
-import { ButtonPrimary } from "@/components/buttons";
 import { Text } from "@/components/texts";
 import AppContext from "@/contexts/AppContext";
 import { Table, TableBody, TableCell, TableHead, TableRow } from "@mui/material";
 import { useContext } from "react";
 import "./shopping-cart.scss";
+import ShoppingCartBuy from "./ShoppingCartActions/ShoppingCartBuy";
+import ShoppingCartClear from "./ShoppingCartActions/ShoppingCartClear";
 
 const ShoppingCart = () => {
-    const { shoppingCartContext, productsContext } = useContext(AppContext);
-    const { shoppingCart, clearCart } = shoppingCartContext;
-    const { fetchProductById, updateProduct } = productsContext;
-
-    const handlePurchase = async () => {
-        try {
-            if (!shoppingCart.articles || shoppingCart.articles.length === 0) {
-                alert("No hay productos seleccionados");
-                return;
-            }
-
-            for (const article of shoppingCart.articles) {
-                const product = await fetchProductById(article.id);
-
-                if (product.stock < article.quantity) {
-                    alert("Hay productos con stock insuficiente");
-                    return;
-                }
-            }
-
-            for (const article of shoppingCart.articles) {
-                const product = await fetchProductById(article.id);
-                await updateProduct(product.id, { ...product, stock: product.stock - article.quantity });
-            }
-
-            alert("¡Compra realizada con éxito!");
-
-            clearCart();
-        } catch (error) {
-            console.error(error);
-            alert("Ocurrió un error al procesar la compra.");
-        }
-    };
+    const { shoppingCartContext } = useContext(AppContext);
+    const { shoppingCart } = shoppingCartContext;
 
     return (
         <div className="shopping-cart">
@@ -63,7 +33,6 @@ const ShoppingCart = () => {
                         </TableRow>
                     ))}
                 </TableBody>
-
             </Table>
 
             <div className="table__footer">
@@ -71,9 +40,9 @@ const ShoppingCart = () => {
             </div>
 
             <div className="shopping-cart__actions">
-                <ButtonPrimary size="md" onClick={clearCart}>Vaciar carrito</ButtonPrimary>
-                <ButtonPrimary size="md" onClick={handlePurchase}>Realizar pedido</ButtonPrimary>
-            </div>
+                <ShoppingCartClear/>
+                <ShoppingCartBuy/>
+            </div>;
         </div>
     );
 };

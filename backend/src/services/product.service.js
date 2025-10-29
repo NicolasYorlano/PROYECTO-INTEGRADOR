@@ -53,7 +53,7 @@ export default class ProductService {
         if (values.name) product.name = values.name;
         if (values.description) product.description = values.description;
         if (values.price) product.price = values.price;
-        if (values.stock) product.stock = values.stock;
+        if (values.stock !== undefined) product.stock = values.stock;
         if (values.highlighted) product.highlighted = values.highlighted;
 
         if (file && file.filename !== product.thumbnail) {

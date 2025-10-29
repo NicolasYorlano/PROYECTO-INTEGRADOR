@@ -52,6 +52,7 @@ const ProductItem = (props) => {
             <>
                 <Skeleton className="product-item__actions--skeleton" isLoading={isLoading}>
                     <ButtonPrimary className="product-item__add" size="sm" onClick={handleAddArticle}><ShoppingCartIcon/></ButtonPrimary>
+
                 </Skeleton>
                 <Skeleton className="product-item__actions--skeleton" isLoading={isLoading}>
                     <ButtonPrimary className="product-item__remove" size="sm" onClick={handleSubtractArticle}><RemoveShoppingCartIcon/></ButtonPrimary>
