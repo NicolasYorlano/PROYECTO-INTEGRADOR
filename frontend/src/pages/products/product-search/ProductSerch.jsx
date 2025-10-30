@@ -1,47 +1,42 @@
 import { ButtonPrimary } from "@/components/buttons";
-import { InputSearch } from "@/components/inputs";
-import { Text } from "@/components/texts";
-import { Form, Formik } from "formik";
+import InputSearchProduct from "@/components/inputs/InputSearchProduct";
+import AppContext from "@/contexts/AppContext";
+import { useFormik } from "formik";
+import PropTypes from "prop-types";
+import { useContext, useEffect } from "react";
 import "./product-search.scss";
 import searchProductInitialValues from "./search-product-initial-values";
-import searchProductValidationSchema from "./search-product.validation-schema";
 import { useSearchProduct } from "./useSearchProduct";
 
-const ProductSearch = () => {
-    const { handleSearch, noResults, isLoading } = useSearchProduct();
+const ProductSearch = ({ className, ...restProps }) => {
+    const classes = `search-product-form ${className ?? ""}`;
+    const { handleSearch, resetNoResults } = useSearchProduct();
+    const { productsContext } = useContext(AppContext);
+    const { noResults } = productsContext;
+
+    const formik = useFormik({
+        initialValues: searchProductInitialValues,
+        onSubmit: handleSearch,
+    });
+
+    useEffect(() => {
+        if (noResults && formik.values.query) {
+            resetNoResults();
+        }
+    }, [formik.values.query]);
 
     return (
-        <div className="product-search">
-            <Formik
-                initialValues={searchProductInitialValues}
-                validationSchema={searchProductValidationSchema}
-                onSubmit={handleSearch}>
-                {(formik) => (
-                    <Form className="product-search__form">
-                        <InputSearch
-                            formik={formik}
-                            className="product-search__input"
-                            name="query"
-                            label="Ingresa para bsucar"
-                            placeholder="Buscar productos..."
-                            maxLength={50}/>
-
-                        <ButtonPrimary
-                            className="product-search__button"
-                            disabled={formik.isSubmitting || isLoading}>
-                            {isLoading ? "Buscando..." : "Buscar"}
-                        </ButtonPrimary>
-
-                        {noResults && !isLoading && (
-                            <Text className="product-search__no-results" variant="p">
-                No se encontraron resultados para tu búsqueda.
-                            </Text>
-                        )}
-                    </Form>
-                )}
-            </Formik>
-        </div>
+        <form onSubmit={formik.handleSubmit} {...restProps}>
+            <div className={classes}>
+                <InputSearchProduct formik={formik} name="query" />
+                <ButtonPrimary className="" type="submit">Buscar</ButtonPrimary>
+            </div>
+        </form>
     );
+};
+
+ProductSearch.propTypes = {
+    className: PropTypes.string,
 };
 
 export default ProductSearch;

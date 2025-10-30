@@ -103,6 +103,13 @@
         }
     }
 
+    &__count {
+        color: black;
+        font-size: 1.5rem;
+        margin: auto 0;
+        padding-left: 0.25rem;
+    }
+
     &:hover {
         transform: scale(1.015);
         box-shadow: 0 0 12px rgba(255, 255, 255, 0.25);

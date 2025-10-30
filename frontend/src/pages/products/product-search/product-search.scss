@@ -1,14 +1,8 @@
 @use "@/scss/variables" as var;
 
-.input-search-product {
+.search-product-form {
     display: flex;
     gap: var.$spacing-sm;
-
-    &__button {
-        height: 40px;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+    max-height: 2.5rem;
+    max-width: 335px;
 }

@@ -1,29 +1,28 @@
 import AppContext from "@/contexts/AppContext";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 
 export const useSearchProduct = () => {
     const { productsContext } = useContext(AppContext);
-    const { fetchProducts } = productsContext;
+    const { products, setFilteredProducts, setNoResults } = productsContext;
 
-    const [ noResults, setNoResults ] = useState(false);
+    const handleSearch = (values) => {
+        const query = values.query.trim().toLowerCase();
 
-    const handleSearch = async (values) => {
-        const query = values.query.trim();
-
-        try {
-            await fetchProducts(query ? { search: query } : {});
-
-            setTimeout(() => {
-                setNoResults(productsContext.products.length === 0);
-            }, 100);
-        } catch (error) {
-            console.error("Error al buscar productos:", error);
-            setNoResults(true);
+        if (!query) {
+            setFilteredProducts([]);
+            setNoResults(false);
+            return;
         }
+
+        const filtered = products.filter((p) =>
+            p.name.toLowerCase().includes(query),
+        );
+
+        setFilteredProducts(filtered);
+        setNoResults(filtered.length === 0);
     };
 
-    return {
-        handleSearch,
-        noResults,
-    };
+    const resetNoResults = () => setNoResults(false);
+
+    return { handleSearch, resetNoResults };
 };

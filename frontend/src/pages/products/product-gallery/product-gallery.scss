@@ -6,6 +6,11 @@
     gap: var.$spacing-md;
     width: 100%;
 
+    &__no-results {
+        color: var.$color-danger-500;
+        padding: var.$spacing-xl;
+    }
+
     @media (max-width: 768px) {
         grid-template-columns: repeat(2, 1fr);
     }
