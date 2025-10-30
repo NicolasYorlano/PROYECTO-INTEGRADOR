@@ -2,7 +2,6 @@
 
 .navbar {
     grid-area: navbar;
-
     padding: var.$spacing-xs !important;
 
     &__menu-icon,
@@ -13,9 +12,12 @@
 
     @media (max-width: 768px) {
 
+        
+
         &__menu-icon,
         &__menu-drawer {
             display: block !important;
+            display: block;
         }
 
         &__menu-list {
