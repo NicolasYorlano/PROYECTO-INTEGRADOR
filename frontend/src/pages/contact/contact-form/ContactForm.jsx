@@ -10,7 +10,7 @@ const ContactForm = (props) => {
     const { className, ...restProps } = props;
     const classes = `contact-form ${className ?? ""}`;
 
-    const { formik, isSubmitDisabled, isLoading, success, error } = useContactForm();
+    const { formik, isSubmitDisabled, isLoading, success, error, resetAlert } = useContactForm();
 
     return (
         <form className={classes} onSubmit={formik.handleSubmit} {...restProps}>
@@ -27,10 +27,12 @@ const ContactForm = (props) => {
             <div className="contact-form__alert">
                 <AlertSuccessForm
                     open={success && !isLoading && !error}
-                    message="Tu consulta fue enviada correctamente."/>
+                    message="Tu consulta fue enviada correctamente."
+                    onClose={resetAlert}/>
                 <AlertDangerForm
                     open={success && !isLoading && error}
-                    message={error?.message || "Error al enviar la consulta. Por favor, inténtalo de nuevo."}/>
+                    message={error?.message || "Error al enviar la consulta. Por favor, inténtalo de nuevo."}
+                    onClose={resetAlert}/>
             </div>
         </form>
     );

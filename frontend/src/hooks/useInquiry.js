@@ -21,7 +21,13 @@ export const useInquiry = () => {
         setIsLoading(false);
     };
 
+    const resetInquiryState = () => {
+        setSuccess(false);
+        setError(null);
+    };
+
     return {
+        resetInquiryState,
         sendInquiry,
         isLoading,
         success,

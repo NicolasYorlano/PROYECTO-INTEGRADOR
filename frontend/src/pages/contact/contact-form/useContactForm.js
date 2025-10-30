@@ -6,7 +6,7 @@ import { validationSchema } from "./contact-form.validation-schema.js";
 
 const useContactForm = () => {
     const { inquiryContext } = useContext(AppContext);
-    const { sendInquiry, isLoading, success, error } = inquiryContext;
+    const { sendInquiry, isLoading, success, error, resetInquiryState } = inquiryContext;
 
     const formik = useFormik({
         initialValues,
@@ -37,6 +37,7 @@ const useContactForm = () => {
         isLoading,
         success,
         error,
+        resetAlert: resetInquiryState,
     };
 
 };
