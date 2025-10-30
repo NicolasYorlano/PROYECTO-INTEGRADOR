@@ -9,4 +9,6 @@ Mi linkedin: https://www.linkedin.com/in/nicol%C3%A1s-yorlano-28578327a/
 mi instagram: https://www.instagram.com/nico_yorlano/
 mi contacto: +54 221 636 2727
 
-Link Vercel : https://proyecto-integrador-pl9uv037w-nicolas-yorlanos-projects.vercel.app/
+// Dejo 2 liks
+Link Vercel : https://proyecto-integrador-j7ila5nwr-nicolas-yorlano.vercel.app/
+Link Vercel : https://proyecto-integrador-psi-ivory.vercel.app/
