@@ -14,5 +14,22 @@
     &__actions {
         display: flex;
         gap: var.$spacing-md;
+        flex-wrap: wrap;
+    }
+
+    &__delate {
+        border-top: 1px solid red;
+        padding-top: 1rem;
+        display: flex;
+        justify-content: center;
+
+        &-text {
+            font-size: 1.2rem;
+        }
+
+        &-action {
+            display: flex;
+            justify-content: center;
+        }
     }
 }

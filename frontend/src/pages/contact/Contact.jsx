@@ -13,7 +13,7 @@ const Contact = () => {
                 </div>
 
                 <div className="contact__form">
-                    <Text variant="h3">Formulario de consulta</Text>
+                    <Text variant="h3">Envianos tu consulta</Text>
                     <ContactForm />
                 </div>
             </div>

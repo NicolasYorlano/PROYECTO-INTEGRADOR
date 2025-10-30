@@ -10,13 +10,13 @@ export const items = [
         label: "Nosotros",
     },
     {
-        path: "/contact",
-        iconName: "Contacts",
-        label: "Contacto",
-    },
-    {
         path: "/products",
         iconName: "Inventory",
         label: "Productos",
+    },
+    {
+        path: "/contact",
+        iconName: "Contacts",
+        label: "Contacto",
     },
 ];
