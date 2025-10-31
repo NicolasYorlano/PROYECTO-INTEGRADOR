@@ -23,7 +23,7 @@ const Input = (props) => {
 
     return (
         <FormControl fullWidth className={classes}>
-            <InputLabel htmlFor="outlined-adornment-amount" size={size}>{label}</InputLabel>
+            <InputLabel htmlFor="outlined-adornment-amount" size={size} disableAnimation > {label} </InputLabel>
             <OutlinedInput
                 id={id || name}
                 label={label}

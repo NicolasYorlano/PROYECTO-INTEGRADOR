@@ -29,7 +29,7 @@ const ProductSearch = ({ className, ...restProps }) => {
         <form onSubmit={formik.handleSubmit} {...restProps}>
             <div className={classes}>
                 <InputSearchProduct formik={formik} name="query" />
-                <ButtonPrimary className="" type="submit">Buscar</ButtonPrimary>
+                <ButtonPrimary>Buscar</ButtonPrimary>
             </div>
         </form>
     );

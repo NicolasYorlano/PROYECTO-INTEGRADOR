@@ -14,7 +14,7 @@
     }
 
     &__label {
-        font-weight: bold;
+        
     }
 
     &__image {
@@ -42,7 +42,6 @@
         label,
         label.Mui-focused {
             color: var.$color-primary-600 !important;
-            font-weight: bold;
         }
 
         div input+fieldset,
