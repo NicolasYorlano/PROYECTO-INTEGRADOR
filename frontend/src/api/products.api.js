@@ -101,7 +101,7 @@ const removeProduct = async (id) => {
     }
 };
 
-/*
+
 const fetchHighlightedProducts = async () => {
     try {
         const response = await fetch(`${API_URL}/products?highlighter=true`);
@@ -113,7 +113,7 @@ const fetchHighlightedProducts = async () => {
         throw error;
     }
 };
-*/
+
 
 export default {
     fetchProducts,
@@ -121,5 +121,5 @@ export default {
     createProduct,
     updateProduct,
     removeProduct,
-    //fetchHighlightedProducts
+    fetchHighlightedProducts,
 };
