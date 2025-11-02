@@ -21,9 +21,15 @@ const ProductItem = (props) => {
 
     const navigate = useNavigate();
     const { shoppingCartContext } = useContext(AppContext);
-    const { addArticle, subtractArticle } = shoppingCartContext;
+    const { shoppingCart, addArticle, subtractArticle } = shoppingCartContext;
 
     const classes = `product-item ${className ?? ""}`;
+
+    const currentArticle = shoppingCart.articles?.find(
+        (item) => item.id === product.id,
+    );
+
+    const count = currentArticle ? currentArticle.quantity : 0;
 
     const handleEditProduct = () => {
         navigate(`/products/${product.id}`);
@@ -34,7 +40,9 @@ const ProductItem = (props) => {
     };
 
     const handleSubtractArticle = () => {
-        subtractArticle(product.id, 1);
+        if (count > 0) {
+            subtractArticle(product.id, 1);
+        }
     };
 
     const getSourceImage = () => {
@@ -51,12 +59,27 @@ const ProductItem = (props) => {
         return (
             <>
                 <Skeleton className="product-item__actions--skeleton" isLoading={isLoading}>
-                    <ButtonPrimary className="product-item__add" size="sm" onClick={handleAddArticle}><ShoppingCartIcon/></ButtonPrimary>
-
+                    <ButtonPrimary
+                        className="product-item__add"
+                        size="sm"
+                        onClick={handleAddArticle}>
+                        <ShoppingCartIcon/>
+                    </ButtonPrimary>
                 </Skeleton>
 
+                {count > 0 && (
+                    <Skeleton className="product-item__actions--skeleton" isLoading={isLoading}>
+                        <Text className="product-item__counter" variant="span">{count}</Text>
+                    </Skeleton>
+                )}
+
                 <Skeleton className="product-item__actions--skeleton" isLoading={isLoading}>
-                    <ButtonPrimary className="product-item__remove" size="sm" onClick={handleSubtractArticle}><RemoveShoppingCartIcon/></ButtonPrimary>
+                    <ButtonPrimary
+                        className="product-item__remove"
+                        size="sm"
+                        onClick={handleSubtractArticle}>
+                        <RemoveShoppingCartIcon/>
+                    </ButtonPrimary>
                 </Skeleton>
             </>
         );
