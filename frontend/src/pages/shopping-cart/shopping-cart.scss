@@ -1,12 +1,10 @@
 @use "@/scss/variables" as var;
 
-
 .shopping-cart {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: var.$spacing-xl;
-
     padding: var.$spacing-xl;
     max-width: 1280px;
     margin: 0 auto;
@@ -15,9 +13,8 @@
         &__head {
             th {
                 color: var.$color-primary-300;
-                font-weight: var.$font-weight-regular;
-                font-size: var.$font-size-xs;
                 font-weight: bold;
+                font-size: var.$font-size-xs;
             }
         }
 
@@ -52,5 +49,36 @@
     &__actions {
         display: flex;
         gap: var.$spacing-xl;
+    }
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+
+    &__value {
+        min-width: 20px;
+        text-align: center;
+        color: var.$color-neutro-100;
+    }
+
+    &__icon {
+        font-size: var.$spacing-xxl;
+        color: var.$color-primary-400;
+        cursor: pointer;
+
+        &:hover {
+            color: var.$color-primary-200;
+        }
+
+        &--remove {
+            margin-right: 4px;
+        }
+
+        &--add {
+            margin-left: 4px;
+        }
     }
 }

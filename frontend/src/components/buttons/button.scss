@@ -6,8 +6,8 @@
 
     background-color: var.$color-primary-500;
     border: none;
-    border-radius: 0.25rem;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+    border-radius: var.$spacing-3xs;
+    box-shadow: 0 0 2px rgba(245, 245, 245, 0.3);
     cursor: pointer;
 
     &--sm {
