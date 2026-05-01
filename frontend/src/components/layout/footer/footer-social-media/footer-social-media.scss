@@ -18,4 +18,13 @@
 
         padding-left: var.$spacing-3xs;
     }
-}
+
+    @media (max-width: 768px) {
+        align-items: center;
+
+        &__list {
+            padding-left: 0;
+            justify-content: center;
+        }
+    }
+}

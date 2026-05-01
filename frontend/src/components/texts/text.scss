@@ -5,28 +5,28 @@
 
     &--h1 {
         color: var.$color-neutro-300 !important;
-        font-size: var.$font-size-xxl;
+        font-size: clamp(var.$font-size-lg, 3vw, var.$font-size-xxl);
         font-weight: var.$font-weight-bold;
-        line-height: var.$line-height-xxl;
+        line-height: var.$line-height-xl;
     }
 
     &--h2 {
         color: var.$color-primary-300;
-        font-size: var.$font-size-xl;
+        font-size: clamp(var.$font-size-md, 2.5vw, var.$font-size-xl);
         font-weight: var.$font-weight-bold;
         line-height: var.$line-height-xl;
     }
 
     &--h3 {
         color: var.$color-neutro-100;
-        font-size: var.$font-size-lg;
+        font-size: clamp(var.$font-size-sm, 2vw, var.$font-size-lg);
         font-weight: var.$font-weight-bold;
         line-height: var.$line-height-lg;
     }
 
     &--p {
         color: var.$color-neutro-100;
-        font-size: var.$font-size-md;
+        font-size: clamp(var.$font-size-xs, 1.5vw, var.$font-size-md);
         font-weight: var.$font-weight-regular;
         line-height: var.$line-height-md;
     }
@@ -37,4 +37,4 @@
         font-weight: var.$font-weight-light;
         line-height: var.$line-height-xs;
     }
-}
+}

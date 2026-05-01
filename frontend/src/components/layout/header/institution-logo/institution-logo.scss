@@ -6,9 +6,10 @@
     gap: var.$spacing-sm;
 
     &__title {
-        font-size: var.$font-size-xxl;
+        font-size: clamp(1.1rem, 2.5vw, var.$font-size-xxl);
         font-weight: var.$font-weight-bold;
-        color: var.$color-neutro-100
+        color: var.$color-neutro-100;
+        letter-spacing: -0.02em;
+        white-space: nowrap;
     }
-
-}
+}
